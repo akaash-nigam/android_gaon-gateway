@@ -459,6 +459,79 @@
             text-decoration: none;
         }
 
+        /* Village Infographic Section */
+        .village-infographic-section {
+            background: linear-gradient(135deg, #FEF3C7 0%, #FFEDD5 100%);
+            padding: 60px 0;
+            width: 100%;
+        }
+        .village-infographic-container {
+            max-width: 1400px;
+            width: 95%;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .village-infographic-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 40px;
+            align-items: center;
+        }
+        .village-infographic-content h2 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--brown);
+            margin-bottom: 16px;
+        }
+        .village-infographic-content p {
+            font-size: 1.05rem;
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        .village-feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .village-feature-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(245, 158, 11, 0.3);
+            color: #333;
+            font-size: 1rem;
+        }
+        .village-feature-list li:last-child {
+            border-bottom: none;
+        }
+        .village-feature-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--orange-light);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        .village-infographic-visual img {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            border: 3px solid var(--orange);
+        }
+        @media (max-width: 900px) {
+            .village-infographic-grid {
+                grid-template-columns: 1fr;
+            }
+            .village-infographic-content h2 {
+                font-size: 1.5rem;
+            }
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .hero h1 { font-size: 2rem; }
@@ -534,6 +607,39 @@
             <div>
                 <div class="stat-number">100%</div>
                 <div class="stat-label">मुफ्त</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Village Infographic -->
+    <section class="village-infographic-section">
+        <div class="village-infographic-container">
+            <div class="village-infographic-grid">
+                <div class="village-infographic-content">
+                    <h2>🏡 गाँव का डिजिटल द्वार</h2>
+                    <p>गाँव गेटवे से शहर की सारी सुविधाएं अब आपके गाँव में। एक ऐप में सब कुछ - अपनी भाषा में।</p>
+                    <ul class="village-feature-list">
+                        <li>
+                            <span class="village-feature-icon">🛒</span>
+                            <span>ऑनलाइन खरीदारी - शहर से सामान मंगवाएं</span>
+                        </li>
+                        <li>
+                            <span class="village-feature-icon">🏛️</span>
+                            <span>सरकारी सेवाएं - राशन कार्ड, आधार, प्रमाण पत्र</span>
+                        </li>
+                        <li>
+                            <span class="village-feature-icon">💰</span>
+                            <span>बैंकिंग और UPI - पैसे भेजें, बिल भरें</span>
+                        </li>
+                        <li>
+                            <span class="village-feature-icon">🏥</span>
+                            <span>डॉक्टर से बात - वीडियो कॉल पर सलाह</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="village-infographic-visual">
+                    <img src="infographic-village.png" alt="गाँव गेटवे डिजिटल सेवाएं">
+                </div>
             </div>
         </div>
     </section>
